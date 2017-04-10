@@ -21,7 +21,8 @@
     "server/**/*.ts",
     "server.ts",
     "dist",
-    "test-config/"
+    "test-config/",
+    "./src/**/*.spec.ts"
   ],
   "compileOnSave": false,
   "atom": {
