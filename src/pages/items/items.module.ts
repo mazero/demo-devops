@@ -14,6 +14,9 @@ import { DeadlinePipe } from "../../pipes/deadline-pipe";
 import { SortDescPipe } from "../../pipes/sortdesc-pipe";
 import { DateFormatPipe } from "../../pipes/dateformat-pipe";
 
+ import { NotifMock } from "../../providers/notifications-service/notif-mock";
+ import { LocalNotifications } from '@ionic-native/local-notifications';
+
 @NgModule({
   declarations: [
     Items,
@@ -23,6 +26,10 @@ import { DateFormatPipe } from "../../pipes/dateformat-pipe";
   ],
   imports: [
     IonicPageModule.forChild(Items)
+  ],
+  providers: [
+    NotifMock,
+    LocalNotifications
   ],
   exports: [
     Items
