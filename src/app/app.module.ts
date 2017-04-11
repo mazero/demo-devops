@@ -19,6 +19,7 @@ import { TodosService } from '../providers/todos-service/todos-service';
 
 import { EnvironmentsModule }  from './environment/environment.module';
 
+
 const pages:Array<any> = [
   MyApp,
   HomePage
@@ -30,11 +31,16 @@ const providers:Array<any> = [
   TodosService
 ];
 
+const ionicAppConfig:Object = {
+  tabsPlacement: 'top',
+  mode: 'md'
+};
+
 @NgModule({
   declarations: [...pages],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, ionicAppConfig),
     HttpModule,
     EnvironmentsModule
   ],

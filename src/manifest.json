@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "demo-cours-devops",
+  "short_name": "demo-devops",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
