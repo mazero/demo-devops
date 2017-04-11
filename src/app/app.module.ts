@@ -17,6 +17,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TodosService } from '../providers/todos-service/todos-service';
 
+import { EnvironmentsModule }  from './environment/environment.module';
+
 const pages:Array<any> = [
   MyApp,
   HomePage
@@ -33,7 +35,8 @@ const providers:Array<any> = [
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    EnvironmentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [...pages],

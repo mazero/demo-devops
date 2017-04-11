@@ -13,7 +13,7 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription.js'
 
 import { TodosService, ITodo } from '../../providers/todos-service/todos-service';
- import { INotifItem } from "../../providers/notifications-service/notif-model";
+// import { INotifItem } from "../../providers/notifications-service/notif-model";
 import { NotifMock } from '../../providers/notifications-service/notif-mock';
 
 
