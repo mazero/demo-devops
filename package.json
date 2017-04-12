@@ -7,7 +7,7 @@
     "test": "karma start ./test-config/karma.conf.js",
     "start": "NODE_ENV=prod node ./server.js",
     "start:dev": "sudo mongod & npm run server:dev & ionic serve --dev",
-    "start:prod": "npm run server & ionic serve --prod",
+    "start:prod": "ionic serve --prod",
     "server": "tsc server.ts --outDir ./dist && NODE_ENV=prod node ./dist/server.js",
     "server:dev": "tsc server.ts -w --outDir ./dist & nodemon ./dist/server.js  --dev --ignore src/ --ignore www/ --ignore .tmp/",
     "mongod": "$HOME/Applications/mongodb-osx-x86_64-3.4.0/bin/mongod --dbpath $HOME/Applications/mongodb-osx-x86_64-3.4.0/data/db",
