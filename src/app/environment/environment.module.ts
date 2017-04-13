@@ -9,7 +9,9 @@ declare const process: any; // Typescript compiler will complain without this
 
 export function environmentFactory():IEnvironment {
   let env:IEnvironment = process.env.IONIC_ENV === 'prod' ? prodVariables : devVariables;
-  if(process.env.IONIC_ENV != 'prod') console.log('env->', env)
+  //if(process.env.IONIC_ENV != 'prod') console.log('env->', env)
+  if(process.env.NODE_ENV === 'prod') { env = prodVariables }
+  console.log('env->', env)
   return env
 }
 
