@@ -6,6 +6,6 @@ var path = './platforms/browser/www';
 gulp.task('deploy', function() {
   return gulp.src(path+'/**/*')
     .pipe(ghPages([{
-        origin: 'github'
+            origin: "github"
     }]));
 });
